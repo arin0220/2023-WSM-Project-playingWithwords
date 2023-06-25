@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>book</title>
+    <!-- Bootstrap Icons의 CSS를 가져옴 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/single_book.css">
+    
+    <!-- Slick Carousel의 CSS를 가져옴 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+    <!-- 헤더 섹션 -->
+    <header>
+        <a href="book.html"><i class="bi-arrow-left"></i></a> <!-- 이전 버튼 아이콘 -->
+        <h1>도감</h1> <!-- 제목 -->
+    </header>
+    <!-- 이름 섹션 -->
+    <section class="name">
+        <p id="animal-name">문어</p> <!-- 동물 이름 -->
+    </section>
+    <!-- 카드 섹션 -->
+    <section class="card">
+        <!-- 이전 버튼을 감싸는 컨테이너 -->
+        <div class="button-container">
+            <button class="prev-button" aria-label="Previous">
+                <i class="bi-chevron-left"></i><!-- 이전 버튼 텍스트 -->
+            </button>
+        </div>
+        <div class="single-item">
+            <div><img src="images/octopus.png" height="230px" alt=""></div> <!-- 이미지 1 -->
+            <div><img src="images/seahorse.png" height="240px" alt=""></div> <!-- 이미지 2 -->
+            <div><img src="images/Whale.png" height="200px" alt=""></div> <!-- 이미지 3 -->
+            <div><img src="images/shark.png" height="230px" alt=""></div> <!-- 이미지 4 -->
+            <div><img src="images/fish.png" height="230px" alt=""></div> <!-- 이미지 5 -->
+
+            <div><img src="images/orange.png" width="100px" alt=""></div> <!-- 이미지 1 -->
+            <div><img src="images/apple.png" width="100px" alt=""></div> <!-- 이미지 2 -->
+            <div><img src="images/banana.png" width="100px" alt=""></div> <!-- 이미지 3 -->
+            <div><img src="images/grape.png" width="100px" alt=""></div> <!-- 이미지 4 -->
+            <div><img src="images/watermelon.png" width="100px" alt=""></div> <!-- 이미지 5 -->
+
+            <div><img src="images/dog.png" height="200px" alt=""></div> <!-- 이미지 1 -->
+            <div><img src="images/cat.png"  height="200px"alt=""></div> <!-- 이미지 2 -->
+            <div><img src="images/bear.png" height="220px" alt=""></div> <!-- 이미지 3 -->
+            <div><img src="images/lion.png"  alt=""></div> <!-- 이미지 4 -->
+            <div><img src="images/monkey.png" height="200px"  alt=""></div> <!-- 이미지 5 -->
+        </div>
+        <!-- 다음 버튼을 감싸는 컨테이너 -->
+        <div class="button-container">
+            <button class="next-button" aria-label="Next">
+                <i class="bi-chevron-right"></i> <!-- 다음 버튼 텍스트 -->
+            </button>
+        </div>
+    </section>
+
+    <!-- jQuery 라이브러리 가져오기 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Slick Carousel 라이브러리 가져오기 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/single_book.js"></script>
+</body>
+</html>

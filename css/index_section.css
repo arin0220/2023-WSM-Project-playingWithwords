@@ -1,0 +1,356 @@
+/* section */
+section {
+    text-align: center;
+    color: #000;
+}
+
+/* section */
+section > div {
+    height: 100vh;
+}
+
+/* 단어놀이팡 설명 */
+section #content1 {
+    background-color: #fff;
+    background-image: url(../images/section0.png);
+    background-size: 100% 100%;
+
+}
+
+
+/* content1 글씨(웹 설명) */
+section #content1 h1 { 
+   text-align: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 33px;
+   color: #fff;
+}
+
+/* content1 글씨 강조(웹 설명) */
+section #content1 h1 strong {
+    color: #FFEEBD;
+    font-size: 40px;
+} 
+
+/* 게임 소개 */
+section #content2 {
+    height: 350vh;
+    background-color: #FFEEBD;
+}
+
+/* content2 게임 소개 제목 */
+section #content2 h1 {
+   font-size: 33px;
+   padding: 5rem;
+    
+}
+
+/* 낚시게임 소개 */
+section #content2 #content2-1 {
+   height: 100vh;
+   width: 100%;
+   background-image: url(../images/section2_1.jpg);
+   background-size: 100% 100%;
+}
+
+/* content2 낚시게임 글부분 */
+ section #content2 #content2-1 .left1 {
+    float: left;
+    width: 60%;
+    height: 100vh;
+   padding: 15px;
+    
+ }
+
+ /* content2 낚시게임 그림부분 */
+ section #content2 #content2-1 .right1 {
+    float: right;
+    width: 40%;
+    height: 100vh;
+   
+    
+ }
+
+/* content2 낚시게임 글씨 */
+section #content2 #content2-1 h1 { 
+   padding-top: 11rem;
+   padding-bottom: 6rem;
+   font-size: 33px;
+ }
+
+ /* content2 낚시게임 글씨 강조 */
+ section #content2 #content2-1 strong {
+    color: #000;
+    font-size: 33px;
+    
+ }
+
+ /* content2 낚시게임 이미지 */
+ section #content2 #content2-1 img {
+   width: 45%; /* 이미지의 가로 크기를 100%로 설정 */
+   height: auto; /* 이미지의 세로 크기를 자동으로 조정하여 가로 세로 비율 유지 */
+   padding-top: 220px;
+ }
+
+
+/* 과일게임 소개 */
+section #content2 #content2-2 {
+   height: 100vh;
+   width: 100%;
+   background-image: url(../images/section2_2.png);
+   background-size: 100% 100%;
+}
+
+/* content2 과일게임 그림부분 */
+ section #content2 #content2-2 .left2 {
+    float: left;
+    width: 40%;
+    height: 100vh;
+    
+    
+ }
+
+ /* content2 과일게임 글부분 */
+ section #content2 #content2-2 .right2 {
+    float: right;
+    width: 60%;
+    height: 100vh;
+   
+    
+ }
+
+/* content2 과일게임 글씨 */
+section #content2 #content2-2 h1 { 
+   padding-top: 11rem;
+   padding-bottom: 6rem;
+   font-size: 33px;
+ }
+
+ /* content2 과일게임 글씨 강조 */
+ section #content2 #content2-2 strong {
+    color: #000;
+    font-size: 33px;
+    
+ }
+
+ /* content2 과일게임 이미지 */
+ section #content2 #content2-2 img {
+   width: 45%; /* 이미지의 가로 크기를 100%로 설정 */
+   height: auto; /* 이미지의 세로 크기를 자동으로 조정하여 가로 세로 비율 유지 */
+   padding-top: 220px;
+ }
+
+/* 순서게임 소개 */
+section #content2 #content2-3 {
+   height: 100vh;
+   width: 100%;
+   background-image: url(../images/section2_3.png);
+   background-size: 100% 100%;
+}
+
+/* content2 순서게임 글부분 */
+ section #content2 #content2-3 .left1 {
+    float: left;
+    width: 60%;
+    height: 100vh;
+    
+    
+ }
+
+ /* content2 순서게임 그림부분 */
+ section #content2 #content2-3 .right1 {
+    float: right;
+    width: 40%;
+    height: 100vh;
+   
+    
+ }
+
+/* content2 순서게임 글씨 */
+section #content2 #content2-3 h1 { 
+    padding-top: 11rem;
+    padding-bottom: 6rem;
+    font-size: 33px;
+ }
+
+ /* content2 순서게임 글씨 강조 */
+ section #content2 #content2-3 strong {
+    color: #000;
+    font-size: 33px;
+    
+ }
+
+ /* content2 순서게임 이미지 */
+ section #content2 #content2-3 img {
+   width: 45%; /* 이미지의 가로 크기를 100%로 설정 */
+   height: auto; /* 이미지의 세로 크기를 자동으로 조정하여 가로 세로 비율 유지 */
+   padding-top: 220px;
+ }
+
+
+/* 게임하기 */
+section #content3{
+   background-color: #FFEEBD;
+   height: 70vh;
+}
+
+section #content3 h2 {
+   font-size: 40px;
+   padding-top: 1.5rem;
+   padding-bottom: 5rem;
+}
+
+/* content3 게임하기 글씨 */
+section #content3 h1 {
+    font-size: 33px;
+    padding: 5rem;
+}
+
+/* content3 게임 버튼 */
+section #content3 button {
+    width: 30rem;
+    height: 13rem;
+    font-size: var(--h1-font-size);
+    background-color: rgb(239,177,28);
+    color: #fff;
+    border-radius: 20px;
+}
+
+/* footer */
+footer {
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* footer 내용 */
+footer h3 {
+    text-align: center;
+    line-height: 100px;
+}
+
+/* tablet */
+@media screen and (max-width: 720px) {
+   h1 {
+      font-size: 10px;
+   }
+}
+
+/* mobile */
+@media screen and (max-width: 540px){
+   
+   section #content1 h1 {
+      font-size: 25px;
+      
+   }
+
+   section #content1 h1 strong {
+      font-size: 45px;
+   }
+   
+   section #content2 h1 {
+      font-size: 20px;
+   }
+
+   /* 낚시게임 */
+   section #content2 #content2-1 h1 {
+      font-size: 25px;
+   }
+
+   section #content2 #content2-1 .left1 {
+      display: block;
+      width: 100%;
+      height: 30%;
+     
+  }
+
+  section #content2 #content2-1 .right1 {
+      display: block;
+      width: 100%;
+      height: 70%;
+  }
+
+  section #content2 #content2-1 img {
+      width: 150px;
+  }
+
+   section #content2 #content2-1 strong {
+      font-size: 20px;
+   }
+
+
+
+   /* 과일게임 */
+   section #content2 #content2-2 h1 {
+      font-size: 25px;
+   }
+
+   section #content2 #content2-2 .left2 {
+      display: block;
+      width: 100%;
+      height: 70%;
+     
+  }
+
+  section #content2 #content2-2 .right2 {
+      display: block;
+      width: 100%;
+      height: 30%;
+  }
+
+  section #content2 #content2-2 img {
+      width: 150px;
+  }
+
+   section #content2 #content2-2 strong {
+      font-size: 20px;
+   }
+
+
+   /* 순서게임 */
+   section #content2 #content2-3 h1 {
+      font-size: 25px;
+   }
+
+   section #content2 #content2-3 .left1 {
+      display: block;
+      width: 100%;
+      height: 30%;
+     
+  }
+
+  section #content2 #content2-3 .right1 {
+      display: block;
+      width: 100%;
+      height: 70%;
+  }
+
+  section #content2 #content2-3 img {
+      width: 150px;
+  }
+
+   section #content2 #content2-3 strong {
+      font-size: 20px;
+   }
+
+
+   /* content3 게임하기 글씨 */
+   section #content3 h1 {
+      font-size: 20px;
+      padding: 3rem;
+   }
+
+   section #content3 h2 {
+      font-size: 24px;
+   }
+
+   section #content3 button {
+      width: 12rem;
+      height: 8rem;
+   }
+}

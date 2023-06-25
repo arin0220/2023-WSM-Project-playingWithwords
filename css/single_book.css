@@ -1,0 +1,114 @@
+/* 전체 요소의 margin과 padding을 초기화 */
+* {margin: 0; padding: 0;}
+        
+/* body의 배경색 설정 */
+body {background-color: #FFEEBD;}
+
+/* card 스타일 */
+.card {
+    float: left; width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.card div {
+    width: 600px; 
+    height: 350px;  
+    background-color: #ffffff; 
+    border-radius: 20px;
+}
+
+.single-item div img {
+    width: 250px;
+    padding-top: 50px;
+    margin: auto;
+    display: block;
+}
+
+/* 버튼을 감싸는 컨테이너 스타일 */
+.card .button-container {
+    background-color: #FFEEBD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 버튼 스타일 */
+.card button {
+    font-size: 2.5rem;
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* 버튼에 포커스가 되었을 때의 스타일 */
+.card button:focus {
+    outline: none;
+}
+
+/* 이전 버튼의 스타일 */
+.bi-chevron-left {
+    padding-top: 3em;
+    padding-right: 7em;
+}
+
+/* 다음 버튼의 스타일 */
+.bi-chevron-right {
+    padding-top: 3em;
+    padding-left: 7em;
+}
+
+/* 이름 섹션의 스타일 */
+.name {
+    height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 0.5em;
+    background-color: #FFEEBD;
+}
+
+/* 이름 섹션의 텍스트 스타일 */
+.name p {
+    font-size: 2rem;
+}
+
+/* 화면 너비 0 ~ 1220px일 때의 스타일 */
+@media (max-width: 720px){
+
+    .card div {
+        width: 500px; 
+        height: 350px;  
+    }
+
+    .bi-chevron-left {
+        padding-right: 4em;
+    }
+
+    .bi-chevron-right {
+        padding-left: 4em;
+    }
+
+    .name p {
+        font-size: 1.6rem;
+    }
+   
+}
+
+/* 화면 너비 0 ~ 768px일 때의 스타일 */
+@media (max-width: 540px){
+
+    .bi-chevron-left {
+        padding-right: 1em;
+    }
+
+    .bi-chevron-right {
+        padding-left: 1em;
+    }
+
+    .name p {
+        font-size: 1.5rem;
+    }
+}

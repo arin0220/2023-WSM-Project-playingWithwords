@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>FishingGame</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/fishingGame.css">
+</head>
+<body>
+    <header>
+        <a href="main.html"><i class="bi-arrow-left"></i></a>
+        <h1>낚시 게임</h1>
+    </header>
+    <section style="background-size: contain">
+
+        <div class="container">
+            <div class="image"></div>
+            <img id="myImage1" src="images/exp.png" alt="설명">
+        </div>
+        <button class="button" id="myButton" onclick="hideButtonAndImage()">게임하기</button>
+        
+
+        <div class="circle">
+            <div><img class="SeaAnimalImage SeaAnimalImage1" src="images/Whale.png" width="180rem" onclick="clickAnimal1(); hideSeaAnimalImages(1)"></div>
+        </div>
+        <div class="circle">
+            <div><img class="SeaAnimalImage SeaAnimalImage2" src="images/seahorse.png" width="70rem" onclick="clickAnimal2(); hideSeaAnimalImages(2)"></div>
+        </div>
+        <div class="circle">
+            <div><img class="SeaAnimalImage SeaAnimalImage3" src="images/fish.png" width="150rem" onclick="clickAnimal3(); hideSeaAnimalImages(3)"></div>
+        </div>
+        <div class="circle">
+            <div><img class="SeaAnimalImage SeaAnimalImage4" src="images/octopus.png" width="70rem" onclick="clickAnimal4(); hideSeaAnimalImages(4)"></div>
+        </div>
+        <div class="circle">
+            <div><img class="SeaAnimalImage SeaAnimalImage5" src="images/shark.png" width="130rem" onclick="clickAnimal5(); hideSeaAnimalImages(5)"></div>
+        </div>
+    </section>
+
+    <script src="js/fishingGame.js"></script>
+</body>
+</html>

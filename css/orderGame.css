@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #FFEEBD;
+  }
+
+  header {
+    width: 100%;
+    height: 70px;
+    background-color: #FFEEBD;
+    display: flex;
+    align-items: center;
+  }
+
+  header i {
+    font-size: 2.5rem;
+    margin-right: 10px;
+    padding-left: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .bg {
+    width: 100%;
+    background-color: #FFEEBD;
+    background-image: url(../images/bg_order_d.png);
+    background-size: contain;
+    min-height: calc(100vh - 70px);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .btn_box {
+    overflow: hidden;
+    padding: 5%;
+    width: 90%;
+    background-color: rgb(255, 238, 189);
+    white-space: nowrap;
+    overflow-x: auto;
+    position: fixed;
+    /* margin-top:-20%; */
+    /* top: 90%;  */
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
+  }
+
+  section>div {
+    width: 18%;
+    margin: 1%;
+    height: 170px;
+    background-color: #fff;
+    float: left;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  section img {
+    width: 70%;
+    height: auto;
+  }
+
+  .gm_screen {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 70px);
+    /* gm_screen의 최소 높이를 화면의 높이에서 header의 높이를 뺀 값으로 설정합니다. */
+  }
+
+  .order {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute; /* position 속성을 추가합니다 */
+    top: 0; 
+    margin-top: 0; /* 불필요한 margin-top을 제거합니다 */
+    text-align: center;
+  }
+
+
+  .order img {
+    width: 17%;
+    height: auto;
+    margin: 10px;
+    /* 이미지를 숨깁니다. */
+    display: none;
+  }
+
+  .result {
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    flex-direction: column;
+  }
+
+  .result_img {
+    width: 30%;
+    height: 20%;
+  }
+
+  #result {
+    display: block;
+    background-color: #FFEEBD;
+    padding: 5px 15px;
+    color: #111;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    border: #111 solid 3px;
+    /* margin-top: 10%; */
+  }
+
+  .start {
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    vertical-align: middle;
+  }
+
+  .start_img {
+    width: 480px;
+    height: 300px;
+  }
+
+  #shuffle {
+    display: flex;
+    background-color: #FFEEBD;
+    padding: 5px 15px;
+    color: #111;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    border: #111 solid 3px;
+    /* margin-top: 10%; */
+  }
+
+  .start_img, #shuffle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    margin: 20px;
+  }
+
+  .button{
+    box-shadow: 1px 4px 0 rgb(0,0,0,0.5);
+  }
+  .button:active{
+    box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+    position: relative;
+    top:2px;
+  }
+
+  section {
+    text-align: center;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+
+  /* 화면 너비 0 ~ 1200px */
+  @media (max-width: 1220px) {
+    #wrap {
+      width: 100%;
+    }
+
+    section>div {
+      width: 18%;
+    }
+    .bg {
+      background-image: url(../images/bg_order_d.png);
+      background-size: contain;
+    }
+  }
+
+  /* 화면 너비 0 ~ 720px */
+  @media (max-width: 720px) {
+    section>div {
+      width: 30%;
+    }
+    .bg {
+      background-image: url(../images/br_order_t.png);
+      background-size: contain;
+    }
+  }
+
+  /* 화면 너비 0 ~ 540px */
+  @media (max-width: 540px) {
+    section>div {
+      width: 30%;
+      height: 130px;
+    }
+    .bg {
+      background-image: url(../images/bg_order_s.png);
+      background-size: contain;
+    }
+    .start_img {
+      width: 300px;
+      height: 200px;
+    }
+  }

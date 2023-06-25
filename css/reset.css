@@ -1,0 +1,21 @@
+/* reset CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  /* 컨텐츠에 border주면 px 안맞으니까 방지...? */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

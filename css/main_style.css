@@ -1,0 +1,103 @@
+* {margin: 0; padding: 0;}
+
+body { 
+    background-color: #FFEEBD;
+}
+#wrap {
+    width: 1200px; margin: 0 auto;
+}
+
+header {
+    width: 100%; height: 340px; background-color: #FFEEBD;
+    background-image:url(image/title1.png) ;
+    background-size: 60% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section {
+    overflow: hidden; padding: 5%; width: 90%;background-color: #FFEEBD;
+}
+
+section > div {
+    width: 23%; margin: 1%; height: 170px; 
+    float: left; border-radius: 25px; text-align: center;
+}
+
+footer {
+    width: 100%; height: 100px; 
+}
+        
+img{
+    width: 40%;
+    height: auto;
+    padding-top: 1.5rem;
+    display: block; margin: 0 auto;
+}
+
+img:hover {
+    filter: drop-shadow(1px 1px 1px #333);
+}
+
+.text{
+    padding-top: 5px;
+    font-size: 1rem;
+    line-height : 20px
+}
+
+.tt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+            padding-top: 1rem;
+            font-style: italic;
+        }
+
+section > div{
+    display: flex;
+    flex-direction: column
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 화면 너비 0 ~ 1220px */
+@media (max-width: 1220px){
+    #wrap {width: 100%;}
+    section > div {width: calc(25% - 2%);}
+    section > div:nth-child(5n) {display:none;}
+    section > div:nth-child(4n) {margin-right:0;}
+    header{
+                background-image:url(image/title1.png) ;
+                background-size: 60% auto;
+                background-repeat: no-repeat;
+                background-position: center;
+    }
+}
+
+/* 화면 너비 0 ~ 768px */
+@media (max-width: 768px){
+    /* header {background-color: aqua;} */
+            section > div {width: calc(50% - 2%);}
+            section > div:nth-child(5) {display:block;}
+            section > div:nth-child(4n) {margin-right:auto;}
+            header{
+                background-image:url(image/title2.png) ;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+            /* 화면 너비 0 ~ 480px */
+        @media (max-width: 480px){
+            section > div {width: calc(50% - 2%);}
+            section > div:nth-child(5n) {display:block;}
+            section > div:nth-child(4n) {margin-right:auto;}
+            header{
+                background-image:url(image/title2.png) ;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+

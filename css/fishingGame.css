@@ -1,0 +1,137 @@
+* {margin: 0; padding: 0;}
+        
+        section {
+          position: relative; /* 추가 */
+          float: left;
+          width: 100%;
+          background-image: url(../images/bg_ocean_d.png);
+          min-height: calc(100vh - 70px);
+          cursor: url(../images/mouse_cursor.png), auto;
+          overflow-x: hidden;
+          overflow-y: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        #myImage1 {
+            position: relative;
+            top: -70px; 
+        }
+
+        .button {
+            display: block;
+            position: absolute;
+            bottom: 150px; 
+            left: 50%; 
+            transform: translateX(-50%);
+            background-color: #FFEEBD;
+            padding: 5px 15px;
+            color: #111;
+            font-size: 2rem;
+            border-radius: 10px;
+            border: #111 solid 4px;
+        }
+
+        .SeaAnimalImage {
+            display: none;
+        }
+
+
+        .SeaAnimalImage:hover {
+            filter: drop-shadow( 0px 0px 10px yellow);
+        }
+
+        #myImage1 img:hover {
+            filter: none;
+        }
+        
+
+        
+
+        /* 화면 너비 0 ~ 768px */
+        @media (max-width: 720px){
+            header {height: 50px;} 
+            section {min-height: calc(100vh - 50px); background-image: url(../images/bg_ocean_t.png);} 
+            
+        }
+
+        /* 화면 너비 0 ~ 540px */
+        @media (max-width: 540px){
+            header {height: 50px;}
+            section {min-height: calc(100vh - 50px); background-image: url(../images/bg_ocean_s.png);} 
+            #myImage1 {
+                width: 300px;
+            }
+            .button {
+                width: 200px;
+                bottom: 200px; 
+            }
+
+            
+
+            .circle:nth-child(1) {
+                animation: movex 9s linear infinite;
+                top: 200px;
+            }
+    
+            .circle:nth-child(2) {
+                animation: movex 3s linear infinite;
+                top: 300px;
+            }
+    
+            .circle:nth-child(3) {
+                animation: movex 2.5s linear infinite;
+                top: 400px;
+            }
+    
+            .circle:nth-child(4) {
+                animation: movex 0.4s linear infinite;
+                top: 550px;
+            }
+    
+            .circle:nth-child(5) {
+                animation: movex 3.1s linear infinite;
+                top: 520px;
+            }
+        }
+
+
+        .circle {
+            
+            animation: movex 8s linear infinite;
+        }
+        
+        .circle:nth-child(1) {
+            animation: movex 5s linear infinite;
+            top: 200px;
+        }
+
+        .circle:nth-child(2) {
+            animation: movex 4s linear infinite;
+            top: 300px;
+        }
+
+        .circle:nth-child(3) {
+            animation: movex 5s linear infinite;
+            top: 400px;
+        }
+
+        .circle:nth-child(4) {
+            animation: movex 6s linear infinite;
+            top: 550px;
+        }
+
+        .circle:nth-child(5) {
+            animation: movex 7s linear infinite;
+            top: 520px;
+        }
+
+        @keyframes movex {
+            0% {
+                transform: translateX(calc(100vw - 180px));
+            }
+            100% {
+                transform: translateX(calc(-100vw + 180px)); 
+            }
+        }

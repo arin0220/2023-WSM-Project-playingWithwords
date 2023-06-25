@@ -1,0 +1,64 @@
+* {margin: 0; padding: 0;}
+        
+        section {
+            float: left; 
+            width: 100%; 
+            min-height: calc(100vh - 70px); 
+            background-image: url(../images/fruitGameDesktop.png);
+        }
+        
+        #myImage1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 480px;
+            height: 300px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .button {
+            display: none;
+            position: absolute; 
+            bottom: 150px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            background-color: #FFEEBD;
+            padding: 5px 15px;
+            color: #111;
+            font-size: 2rem;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: #111 solid 4px;
+        }
+
+        img:hover {
+            filter: drop-shadow(0px 0px 10px yellow);
+        }
+
+        /* tablet */
+        @media (max-width: 720px){
+            header {height: 50px;} 
+            section {min-height: calc(100vh - 50px);} 
+            header i {width: 30px;}
+            header h1 {margin-left: 10px; font-size: 1.5rem;}
+        }
+
+         /* mobile */
+        @media (max-width: 540px){
+            header {height: 50px;} 
+            section {min-height: calc(100vh - 50px);} 
+            #myImage1 {
+                width: 300px;
+                height: 200px;
+            }
+
+            .button {
+                width: 200px;
+                bottom: 200px; 
+            }
+
+        }
